@@ -1,4 +1,4 @@
-# 💡 Speak AI
+# 💡 Sonora AI
 
 Plataforma de flashcards inteligentes para aprender inglês com IA.
 
@@ -79,4 +79,4 @@ O projeto utiliza GitHub Actions para integração e deploy contínuos:
 
 ## 📝 Licença
 
-Todos os direitos reservados - Speak AI © 2025
+Todos os direitos reservados - Sonora AI © 2025

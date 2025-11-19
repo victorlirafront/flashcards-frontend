@@ -1,9 +1,11 @@
-<div class="register-container">
-  <div class="register-card">
+<div class="flex justify-center items-center min-h-[80vh] p-5 bg-gradient-to-br from-indigo-500 to-purple-600">
+  <div class="bg-white p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.1)] w-full max-w-lg">
     <!-- Email/Password Register -->
     <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
-      <div class="form-group">
-        <label for="name">Nome:</label>
+      <h2 class="text-center text-gray-800 mb-8 text-3xl font-semibold">Cadastro</h2>
+      
+      <div class="mb-5">
+        <label for="name" class="block mb-2 text-gray-600 font-medium">Nome:</label>
         <input
           type="text"
           id="name"
@@ -11,11 +13,12 @@
           [(ngModel)]="registerData.name"
           required
           placeholder="Digite seu nome completo"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
         >
       </div>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
+      <div class="mb-5">
+        <label for="email" class="block mb-2 text-gray-600 font-medium">Email:</label>
         <input
           type="email"
           id="email"
@@ -23,11 +26,12 @@
           [(ngModel)]="registerData.email"
           required
           placeholder="Digite seu email"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
         >
       </div>
 
-      <div class="form-group">
-        <label for="password">Senha:</label>
+      <div class="mb-5">
+        <label for="password" class="block mb-2 text-gray-600 font-medium">Senha:</label>
         <input
           type="password"
           id="password"
@@ -36,11 +40,12 @@
           required
           minlength="6"
           placeholder="Digite sua senha (mín. 6 caracteres)"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
         >
       </div>
 
-      <div class="form-group">
-        <label for="confirmPassword">Confirmar Senha:</label>
+      <div class="mb-5">
+        <label for="confirmPassword" class="block mb-2 text-gray-600 font-medium">Confirmar Senha:</label>
         <input
           type="password"
           id="confirmPassword"
@@ -48,24 +53,27 @@
           [(ngModel)]="registerData.confirmPassword"
           required
           placeholder="Confirme sua senha"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
         >
       </div>
 
-      <div class="terms-checkbox">
-        <input type="checkbox" id="terms" required>
-        <label for="terms">
-          Aceito os <a href="/terms" target="_blank">Termos de Uso</a> e
-          <a href="/privacy" target="_blank">Política de Privacidade</a>
-        </label>
+      <div class="mb-5">
+        <div class="flex items-start gap-2">
+          <input type="checkbox" id="terms" required class="mt-1">
+          <label for="terms" class="text-sm text-gray-600">
+            Aceito os <a href="/terms" target="_blank" class="text-indigo-500 no-underline font-semibold hover:underline">Termos de Uso</a> e
+            <a href="/privacy" target="_blank" class="text-indigo-500 no-underline font-semibold hover:underline">Política de Privacidade</a>
+          </label>
+        </div>
       </div>
 
-      <button type="submit" class="btn-register" [disabled]="!registerForm.form.valid">
+      <button type="submit" class="w-full py-3 bg-gradient-to-br from-indigo-500 to-purple-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-transform duration-200 mt-2.5 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(102,126,234,0.4)] disabled:opacity-50 disabled:cursor-not-allowed" [disabled]="!registerForm.form.valid">
         Criar Conta
       </button>
     </form>
 
-    <div class="register-footer">
-      <p>Já tem uma conta? <a routerLink="/login">Faça login</a></p>
+    <div class="text-center mt-5 pt-5 border-t border-gray-200">
+      <p class="text-gray-600 m-0">Já tem uma conta? <a routerLink="/login" class="text-indigo-500 no-underline font-semibold hover:underline">Faça login</a></p>
     </div>
   </div>
 </div>

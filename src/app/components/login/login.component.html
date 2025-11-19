@@ -1,9 +1,11 @@
-<div class="login-container">
-  <div class="login-card">
+<div class="flex justify-center items-center min-h-[80vh] p-5 bg-gradient-to-br from-indigo-500 to-purple-600">
+  <div class="bg-white p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.1)] w-full max-w-md">
     <!-- Email/Password Login -->
     <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
-      <div class="form-group">
-        <label for="email">Email:</label>
+      <h2 class="text-center text-gray-800 mb-8 text-3xl font-semibold">Login</h2>
+      
+      <div class="mb-5">
+        <label for="email" class="block mb-2 text-gray-600 font-medium">Email:</label>
         <input
           type="email"
           id="email"
@@ -11,11 +13,12 @@
           [(ngModel)]="loginData.email"
           required
           placeholder="Digite seu email"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
         >
       </div>
 
-      <div class="form-group">
-        <label for="password">Senha:</label>
+      <div class="mb-5">
+        <label for="password" class="block mb-2 text-gray-600 font-medium">Senha:</label>
         <input
           type="password"
           id="password"
@@ -23,17 +26,18 @@
           [(ngModel)]="loginData.password"
           required
           placeholder="Digite sua senha"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
         >
       </div>
 
-      <button type="submit" class="btn-login" [disabled]="!loginForm.form.valid">
+      <button type="submit" class="w-full py-3 bg-gradient-to-br from-indigo-500 to-purple-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-transform duration-200 mt-2.5 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(102,126,234,0.4)] disabled:opacity-50 disabled:cursor-not-allowed" [disabled]="!loginForm.form.valid">
         Entrar
       </button>
     </form>
 
-    <div class="login-footer">
-      <p>Não tem uma conta? <a routerLink="/register">Cadastre-se</a></p>
-      <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+    <div class="text-center mt-5 pt-5 border-t border-gray-200">
+      <p class="text-gray-600 m-0">Não tem uma conta? <a routerLink="/register" class="text-indigo-500 no-underline font-semibold hover:underline">Cadastre-se</a></p>
+      <a href="#" class="text-indigo-500 no-underline font-semibold hover:underline block mt-2">Esqueceu sua senha?</a>
     </div>
   </div>
 </div>
