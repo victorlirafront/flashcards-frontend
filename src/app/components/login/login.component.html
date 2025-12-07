@@ -1,4 +1,4 @@
-<div class="flex justify-center items-center min-h-[80vh] p-5 bg-gradient-to-br from-indigo-500 to-purple-600">
+<div class="flex justify-center items-center min-h-[100vh] py-20 bg-gradient-to-br from-indigo-500 to-purple-600">
   <div class="bg-white p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.1)] w-full max-w-md">
     <!-- Email/Password Login -->
     <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
@@ -30,8 +30,13 @@
         >
       </div>
 
-      <button type="submit" class="w-full py-3 bg-gradient-to-br from-indigo-500 to-purple-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-transform duration-200 mt-2.5 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(102,126,234,0.4)] disabled:opacity-50 disabled:cursor-not-allowed" [disabled]="!loginForm.form.valid">
-        Entrar
+      <div *ngIf="errorMessage" class="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+        {{ errorMessage }}
+      </div>
+
+      <button type="submit" class="w-full py-3 bg-gradient-to-br from-indigo-500 to-purple-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-transform duration-200 mt-2.5 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(102,126,234,0.4)] disabled:opacity-50 disabled:cursor-not-allowed" [disabled]="!loginForm.form.valid || isLoading">
+        <span *ngIf="!isLoading">Entrar</span>
+        <span *ngIf="isLoading">Entrando...</span>
       </button>
     </form>
 

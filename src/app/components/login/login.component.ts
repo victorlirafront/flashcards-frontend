@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -15,9 +16,41 @@ export class LoginComponent {
     password: ''
   };
 
+  errorMessage: string = '';
+  isLoading: boolean = false;
+
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ) {}
+
   onSubmit() {
-    console.log('Login attempt:', this.loginData);
-    // Aqui você implementaria a lógica de autenticação
+    if (!this.loginData.email || !this.loginData.password) {
+      this.errorMessage = 'Por favor, preencha todos os campos';
+      return;
+    }
+
+    this.isLoading = true;
+    this.errorMessage = '';
+
+    this.authService.login(this.loginData).subscribe({
+      next: (response) => {
+        this.isLoading = false;
+        // Redirecionar para a página de perfil
+        this.router.navigate(['/profile']);
+      },
+      error: (error) => {
+        this.isLoading = false;
+        if (error.status === 401 || error.status === 403) {
+          this.errorMessage = 'Email ou senha incorretos';
+        } else if (error.status === 404) {
+          this.errorMessage = 'Usuário não encontrado';
+        } else {
+          this.errorMessage = 'Erro ao fazer login. Tente novamente.';
+        }
+        console.error('Login error:', error);
+      }
+    });
   }
 
   loginWithGoogle() {
