@@ -17,7 +17,7 @@ describe('HeaderComponent', () => {
     mockAuthService.getUserName.mockReturnValue(null);
   });
 
-  it('should render Flashdeck AI title', async () => {
+  it('should render Profit AI title', async () => {
     await render(HeaderComponent, {
       imports: [RouterTestingModule, HttpClientTestingModule],
       providers: [
@@ -25,7 +25,7 @@ describe('HeaderComponent', () => {
       ],
     });
 
-    const title = screen.getByText('Flashdeck AI');
+    const title = screen.getByText('Profit AI');
     expect(title).toBeTruthy();
   });
 

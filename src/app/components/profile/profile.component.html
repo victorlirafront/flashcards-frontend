@@ -1,4 +1,4 @@
-<div class="flex justify-center items-center min-h-[80vh] p-5 bg-gradient-to-br from-indigo-500 to-purple-600">
+<div class="flex justify-center items-center min-h-[80vh] p-5 bg-gradient-to-br from-primary-500 to-primary-700">
   <div class="bg-white p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.1)] w-full max-w-2xl">
     <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Meu Perfil</h1>
     
@@ -26,7 +26,7 @@
           required
           minlength="2"
           autocomplete="name"
-          class="w-full px-4 py-2 border border-gray-300 rounded-lg text-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg text-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
           [class.border-red-500]="errorMessage && !editedName.trim()"
           placeholder="Digite seu nome"
           aria-label="Nome do usuário"
@@ -47,7 +47,7 @@
           [(ngModel)]="editedEmail"
           required
           autocomplete="email"
-          class="w-full px-4 py-2 border border-gray-300 rounded-lg text-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-colors"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg text-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
           [class.border-red-500]="errorMessage && !editedEmail.trim()"
           placeholder="Digite seu email"
           aria-label="Email do usuário"
@@ -59,7 +59,7 @@
           *ngIf="!isEditing"
           (click)="startEditing()" 
           type="button"
-          class="flex-1 py-3 bg-gradient-to-br from-indigo-500 to-purple-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(99,102,241,0.4)] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          class="flex-1 py-3 bg-gradient-to-br from-primary-500 to-primary-700 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(196,235,110,0.4)] focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
           aria-label="Editar informações do perfil">
           Editar Perfil
         </button>
@@ -79,7 +79,7 @@
           (click)="saveProfile()" 
           type="button"
           [disabled]="isLoading"
-          class="flex-1 py-3 bg-gradient-to-br from-green-500 to-emerald-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(16,185,129,0.4)] disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+          class="flex-1 py-3 bg-gradient-to-br from-primary-500 to-primary-700 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(196,235,110,0.4)] disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
           aria-label="Salvar alterações do perfil"
           [attr.aria-busy]="isLoading">
           <span *ngIf="!isLoading">Salvar</span>
