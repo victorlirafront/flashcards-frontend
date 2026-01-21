@@ -1,6 +1,6 @@
-# 🎨 Flashdeck AI Design System
+# 🎨 Profit AI Design System
 
-Sistema de design completo para o projeto Flashdeck AI, baseado em Tailwind CSS.
+Sistema de design completo para o projeto Profit AI, baseado em Tailwind CSS.
 
 ## 📋 Índice
 
@@ -19,7 +19,7 @@ Sistema de design completo para o projeto Flashdeck AI, baseado em Tailwind CSS.
 
 ### Cores Primárias
 
-A cor primária é um **indigo** que representa a identidade visual principal do Flashdeck AI.
+A cor primária é um **verde suave (emerald)** que representa a identidade visual principal do Profit AI.
 
 ```html
 <!-- Uso básico -->
@@ -29,21 +29,21 @@ A cor primária é um **indigo** que representa a identidade visual principal do
 ```
 
 **Paleta completa:**
-- `primary-50` - Mais claro
-- `primary-100` - Muito claro
-- `primary-200` - Claro
-- `primary-300` - Médio claro
-- `primary-400` - Médio
-- `primary-500` - **Cor principal** (#667eea)
-- `primary-600` - Médio escuro
-- `primary-700` - Escuro
-- `primary-800` - Muito escuro
-- `primary-900` - Mais escuro
-- `primary-950` - Escuro profundo
+- `primary-50` - Mais claro (#ecfdf3)
+- `primary-100` - Muito claro (#d1fae5)
+- `primary-200` - Claro (#a7f3d0)
+- `primary-300` - Médio claro (#6ee7b7)
+- `primary-400` - Médio (#34d399)
+- `primary-500` - **Cor principal** (#10b981)
+- `primary-600` - Médio escuro (#059669)
+- `primary-700` - Escuro (#047857)
+- `primary-800` - Muito escuro (#065f46)
+- `primary-900` - Mais escuro (#064e3b)
+- `primary-950` - Escuro profundo (#022c22)
 
 ### Cores Secundárias
 
-Cor **purple** usada para elementos secundários e destaques.
+Cor **verde-água/teal** usada para elementos secundários e destaques.
 
 ```html
 <div class="bg-secondary-500 text-white">Conteúdo secundário</div>
@@ -51,7 +51,7 @@ Cor **purple** usada para elementos secundários e destaques.
 
 **Paleta completa:**
 - `secondary-50` até `secondary-950` (mesma estrutura da primária)
-- **Cor principal:** `secondary-600` (#9333ea)
+- **Cor principal:** `secondary-500` (#00b89b)
 
 ### Cores de Acento
 
@@ -216,7 +216,7 @@ Use as classes padrão do Tailwind com espaçamentos customizados adicionais:
 ### Gradientes Pré-definidos
 
 ```html
-<!-- Gradiente primário (indigo → purple) -->
+<!-- Gradiente primário (verde → teal) -->
 <div class="bg-gradient-primary">Conteúdo</div>
 
 <!-- Gradiente secundário -->
@@ -375,7 +375,7 @@ Use as classes padrão do Tailwind com espaçamentos customizados adicionais:
 <!-- Header com gradiente primário -->
 <header class="bg-gradient-primary text-white shadow-lg">
   <nav class="container mx-auto px-4 py-4">
-    <h1 class="text-2xl font-bold">Flashdeck AI</h1>
+    <h1 class="text-2xl font-bold">Profit AI</h1>
   </nav>
 </header>
 

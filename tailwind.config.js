@@ -5,35 +5,35 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // Paleta de Cores - Flashdeck AI Design System
+      // Paleta de Cores - Profit AI Design System
       colors: {
-        // Cores Primárias
+        // Cores Primárias (verde suave - base emerald)
         primary: {
-          50: '#f0f4ff',
-          100: '#e0e9ff',
-          200: '#c7d7fe',
-          300: '#a4b8fc',
-          400: '#818cf8',
-          500: '#667eea', // Cor principal
-          600: '#5a67d8',
-          700: '#4c51bf',
-          800: '#434190',
-          900: '#3c366b',
-          950: '#2d2a4e',
+          50: '#ecfdf3',
+          100: '#d1fae5',
+          200: '#a7f3d0',
+          300: '#6ee7b7',
+          400: '#34d399',
+          500: '#10b981', // Cor principal
+          600: '#059669',
+          700: '#047857',
+          800: '#065f46',
+          900: '#064e3b',
+          950: '#022c22',
         },
         // Cores Secundárias
         secondary: {
-          50: '#faf5ff',
-          100: '#f3e8ff',
-          200: '#e9d5ff',
-          300: '#d8b4fe',
-          400: '#c084fc',
-          500: '#a855f7',
-          600: '#9333ea', // Cor secundária principal
-          700: '#7e22ce',
-          800: '#6b21a8',
-          900: '#581c87',
-          950: '#3b0764',
+          50: '#e0f7f4',
+          100: '#b3ebe2',
+          200: '#81dece',
+          300: '#4dcfb8',
+          400: '#26c4aa',
+          500: '#00b89b', // Cor secundária principal
+          600: '#00a389',
+          700: '#008c74',
+          800: '#00735d',
+          900: '#005a46',
+          950: '#003d30',
         },
         // Cores de Acento
         accent: {
@@ -167,10 +167,10 @@ module.exports = {
       },
       // Gradientes
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        'gradient-secondary': 'linear-gradient(135deg, #9333ea 0%, #a855f7 100%)',
-        'gradient-accent': 'linear-gradient(135deg, #2563eb 0%, #3b82f6 100%)',
-        'gradient-hero': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'gradient-primary': 'linear-gradient(135deg, #34d399 0%, #059669 100%)',
+        'gradient-secondary': 'linear-gradient(135deg, #00b89b 0%, #008c74 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #2dd4bf 0%, #0ea5e9 100%)',
+        'gradient-hero': 'linear-gradient(135deg, #34d399 0%, #059669 100%)',
         'gradient-footer': 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)',
       },
       // Animações

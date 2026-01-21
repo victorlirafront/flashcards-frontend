@@ -1,10 +1,10 @@
-<div class="flex justify-center items-center min-h-[100vh] py-20 bg-gradient-to-br from-indigo-500 to-purple-600">
+<div class="flex justify-center items-center min-h-[100vh] py-20 bg-gradient-to-br from-primary-500 to-primary-700">
   <div class="bg-white p-10 rounded-lg shadow-[0_15px_35px_rgba(0,0,0,0.1)] w-full max-w-md">
     <!-- Email/Password Login -->
     <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
-      <h2 class="text-center text-gray-800 mb-8 text-[18px] font-semibold">Bem-vindo ao sistema de flashcards inteligentes com tecnologia de IA.</h2>
+      <h2 class="text-center text-gray-800 mb-8 text-[18px] font-semibold">Bem-vindo ao Profit AI, seu assistente financeiro inteligente.</h2>
 
-      <p class="text-center text-gray-600 mb-8 text-sm">Antes de continuar, faça login.</p>
+      <p class="text-center text-gray-600 mb-8 text-sm">Faça login para acompanhar gastos, metas e recomendações.</p>
 
       <div class="mb-5">
         <label for="email" class="block mb-2 text-gray-600 font-medium">Email:</label>
@@ -15,7 +15,7 @@
           [(ngModel)]="loginData.email"
           required
           placeholder="Digite seu email"
-          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-primary-500 focus:shadow-[0_0_0_3px_rgba(196,235,110,0.15)]"
         >
       </div>
 
@@ -28,7 +28,7 @@
           [(ngModel)]="loginData.password"
           required
           placeholder="Digite sua senha"
-          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-indigo-500 focus:shadow-[0_0_0_3px_rgba(102,126,234,0.1)]"
+          class="w-full py-3 px-4 border-2 border-gray-200 rounded-lg text-base transition-colors duration-300 focus:outline-none focus:border-primary-500 focus:shadow-[0_0_0_3px_rgba(196,235,110,0.15)]"
         >
       </div>
 
@@ -36,15 +36,15 @@
         {{ errorMessage }}
       </div>
 
-      <button type="submit" class="w-full py-3 bg-gradient-to-br from-indigo-500 to-purple-600 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-transform duration-200 mt-2.5 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(102,126,234,0.4)] disabled:opacity-50 disabled:cursor-not-allowed" [disabled]="!loginForm.form.valid || isLoading">
+      <button type="submit" class="w-full py-3 bg-gradient-to-br from-primary-500 to-primary-700 text-white border-none rounded-lg text-base font-semibold cursor-pointer transition-transform duration-200 mt-2.5 hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(196,235,110,0.4)] disabled:opacity-50 disabled:cursor-not-allowed" [disabled]="!loginForm.form.valid || isLoading">
         <span *ngIf="!isLoading">Entrar</span>
         <span *ngIf="isLoading">Entrando...</span>
       </button>
     </form>
 
     <div class="text-center mt-5 pt-5 border-t border-gray-200">
-      <p class="text-gray-600 m-0">Não tem uma conta? <a routerLink="/register" class="text-indigo-500 no-underline font-semibold hover:underline">Cadastre-se</a></p>
-      <a href="#" class="text-indigo-500 no-underline font-semibold hover:underline block mt-2">Esqueceu sua senha?</a>
+      <p class="text-gray-600 m-0">Não tem uma conta? <a routerLink="/register" class="text-primary-600 no-underline font-semibold hover:underline">Cadastre-se</a></p>
+      <a href="#" class="text-primary-600 no-underline font-semibold hover:underline block mt-2">Esqueceu sua senha?</a>
     </div>
   </div>
 </div>

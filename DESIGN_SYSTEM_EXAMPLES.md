@@ -1,6 +1,6 @@
 # 🎨 Exemplos de Uso do Design System
 
-Este arquivo contém exemplos práticos de como usar o Design System do Flashdeck AI.
+Este arquivo contém exemplos práticos de como usar o Design System do Profit AI.
 
 ## 🎯 Componentes Prontos para Uso
 
@@ -144,7 +144,7 @@ Este arquivo contém exemplos práticos de como usar o Design System do Flashdec
 <nav class="bg-gradient-primary text-white shadow-lg">
   <div class="container mx-auto px-4">
     <div class="flex justify-between items-center h-20">
-      <h1 class="text-2xl font-bold">Flashdeck AI</h1>
+      <h1 class="text-2xl font-bold">Profit AI</h1>
       <div class="flex gap-4">
         <a href="#" class="px-4 py-2 rounded-lg hover:bg-white/10 transition-colors duration-200">
           Início
@@ -207,10 +207,10 @@ Este arquivo contém exemplos práticos de como usar o Design System do Flashdec
 <section class="bg-gradient-hero text-white py-20">
   <div class="container mx-auto px-4 text-center">
     <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
-      Bem-vindo ao Flashdeck AI
+      Bem-vindo ao Profit AI
     </h1>
     <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-      Aprenda inglês com flashcards inteligentes gerados por IA
+      Organize finanças pessoais com insights e automações inteligentes.
     </p>
     <div class="flex gap-4 justify-center flex-wrap">
       <button class="bg-white text-primary-500 hover:bg-neutral-100 font-semibold py-3 px-8 rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
@@ -231,9 +231,9 @@ Este arquivo contém exemplos práticos de como usar o Design System do Flashdec
   <div class="container mx-auto px-4 py-8">
     <div class="grid md:grid-cols-4 gap-8">
       <div>
-        <h3 class="text-xl font-bold text-accent-400 mb-4">Flashdeck AI</h3>
+        <h3 class="text-xl font-bold text-accent-400 mb-4">Profit AI</h3>
         <p class="text-neutral-300 text-sm">
-          Aprenda inglês com flashcards inteligentes gerados por IA.
+          Inteligência financeira para planejar gastos, metas e decisões com clareza.
         </p>
       </div>
       <div>
@@ -245,7 +245,7 @@ Este arquivo contém exemplos práticos de como usar o Design System do Flashdec
       </div>
     </div>
     <div class="border-t border-neutral-700 mt-8 pt-8 text-center text-sm text-neutral-400">
-      © 2025 Flashdeck AI. Todos os direitos reservados.
+      © 2025 Profit AI. Todos os direitos reservados.
     </div>
   </div>
 </footer>
